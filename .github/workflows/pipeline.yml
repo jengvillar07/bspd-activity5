@@ -27,7 +27,7 @@ jobs:
                 chmod +x ./mvnw
                 ./mvnw clean package
 
-            - name: login to docker hub
+            - name: login to Docker hub
               uses: docker/login-action@v2
               with:
                 username: ${{secrets.DOCKER_USERNAME}}
